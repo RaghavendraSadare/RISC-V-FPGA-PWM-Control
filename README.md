@@ -142,7 +142,7 @@ The PWM output was connected to an LED on a breadboard. By modifying the duty cy
 The PWM output was connected to an L293D motor driver to control a DC motor. Adjusting the duty cycle from the processor varied the average voltage applied to the motor, resulting in different rotational speeds. Higher duty cycles made the motor run faster, while lower duty cycles slowed it down, demonstrating the practical applicability of the designed PWM module in real-time embedded systems.
 
 ### Demo Video
-   [Watch Video](Results/DC_Motor_FPGA_demo.mp4)
+   [Watch Video](Results/DC_Motor_FPGA_Demo.mp4)
 
 ## 5. Smart Street System
 Beyond verifying PWM operation on the oscilloscope, LED, and DC motor, the project was extended to a practical application: a Smart **Street Monitoring System**. In this system, an **IR sensor**detected vehicle presence, while an **LDR sensor** measured ambient light levels. The RISC-V processor continuously read the sensor values through GPIO, processed the conditions, and adjusted the PWM duty cycle accordingly. The PWM output was then used to control the brightness of streetlights:
