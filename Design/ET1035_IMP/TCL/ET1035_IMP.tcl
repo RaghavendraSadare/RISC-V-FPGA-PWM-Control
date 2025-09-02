@@ -23,8 +23,8 @@
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
 puts "--- Implementation Started ---"
-set DIR_PATH "D:/d/IRP-SOC-main/Design"
-set PROJ_DIR "D:/d/IRP-SOC-main/Design"
+set DIR_PATH "D:/IRP-SOC-main/IRP-SOC-main/Design"
+set PROJ_DIR "D:/IRP-SOC-main/IRP-SOC-main/Design"
 set DELAY_TIME "5000"
 
 #start_gui
