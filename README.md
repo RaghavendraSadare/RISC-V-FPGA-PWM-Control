@@ -122,23 +122,23 @@ This compiles all sources (`main.c`, `pwm.c`, `uart.c`) and links them with Vega
 
 # Results
 ## 1.PWM Simulation Results
-<img src="Results/Simulation_output_in_GTKWave.jpg" alt="Screenshot" width="95%"/>
+<img src="Results/Simulation_output_in_GTKWave.jpg" alt="Screenshot" width="75%"/>
 
 The designed PWM module was initially verified through simulation prior to FPGA implementation. Using Icarus Verilog for simulation and GTKWave for waveform visualization, both the PWM counter and duty cycle functionality were thoroughly checked. The resulting waveforms clearly demonstrated that the PWM signal toggled correctly according to the expected duty cycle variations, confirming accurate register updates and proper logic operation
 
 ## 2. PWM Output Validation on Oscilloscope
-<img src="Results/Verification_through_an_Oscilloscope.jpg" alt="Screenshot" width="95%"/>
+<img src="Results/Verification_through_an_Oscilloscope.jpg" alt="Screenshot" width="75%"/>
 The Verilog-based PWM module was integrated into the RISC-V ET1035 SoC and deployed on the Arty A7 FPGA. The output waveform was examined using a cathode ray oscilloscope (CRO). By modifying the duty register through the C program, different duty cycles were generated. The oscilloscope traces confirmed the expected pulse-width variations, validating the correct operation of the hardware PWM design.
 
 ## 3. LED Brightness Control using PWM
-<img src="Results/LED_Brightness_Controlled_by_PWM_Output.jpg" alt="Screenshot" width="95%"/>
+<img src="Results/LED_Brightness_Controlled_by_PWM_Output.jpg" alt="Screenshot" width="75%"/>
 The PWM output was connected to an LED on a breadboard. By modifying the duty cycle through C code executed on the RISC-V processor, the LED’s brightness was controlled in real time. Higher duty cycles produced greater brightness, while lower duty cycles dimmed the LED. This experiment demonstrated effective hardware-software integration and validated real-time PWM-based control.
 
 ### Demo Video
   [Watch Video](Results/LED_Brightness_Control_Demo.mp4)
 
 ## 4. DC Motor Speed Control using PWM
-<img src="Results/DC_Motor_FPGA_Interface.jpg" alt="Screenshot" width="95%"/>
+<img src="Results/DC_Motor_FPGA_Interface.jpg" alt="Screenshot" width="75%"/>
 The PWM output was connected to an L293D motor driver to control a DC motor. Adjusting the duty cycle from the processor varied the average voltage applied to the motor, resulting in different rotational speeds. Higher duty cycles made the motor run faster, while lower duty cycles slowed it down, demonstrating the practical applicability of the designed PWM module in real-time embedded systems.
 
 ### Demo Video
