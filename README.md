@@ -6,7 +6,6 @@ The PWM controller is written in **Verilog**, simulated using **Icarus Verilog a
 Once programmed onto the FPGA, the **RISC-V processor** writes duty cycle values to the PWM register using a **C program compiled with the Vega SDK**. These values directly update the PWM hardware, controlling **LED brightness** and **DC motor speed** in real time.
 
 This project demonstrates **hardware-software co-design**, combining **RTL design, embedded programming, SoC integration, and FPGA prototyping**.
-
 ---
 
 ## PWM Duty Cycle Behavior
